@@ -13,15 +13,17 @@ body {
 
 }
 
-#four-card-section {
-  width: 25em;
-  margin: 0 auto;
-}
 
 header {
   text-align: center;
   margin: 0 auto;
-  width: 375px;
+  width: 330px;
+  height: 200px;
+}
+
+header p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
 }
 
 
@@ -39,9 +41,43 @@ header {
 
 h2 {
   color: hsl(234, 12%, 34%);
+  font-size: 20px;
 }
 
-p {
+#four-card-section p {
   color: hsl(229, 6%, 66%);
   font-size: 13px;
+}
+
+#four-card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+#four-card-section div {
+  background-color: white;
+  width: 330px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.supervisor-card {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.team-card {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+  border-top: 3px solid hsl(212, 86%, 64%);
 }
