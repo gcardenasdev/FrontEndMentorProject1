@@ -39,14 +39,16 @@ header p {
   color: hsl(234, 12%, 34%);
 }
 
-h2 {
+#four-card-section h2 {
   color: hsl(234, 12%, 34%);
   font-size: 20px;
+  margin: 15px 25px 5px;
 }
 
 #four-card-section p {
   color: hsl(229, 6%, 66%);
   font-size: 13px;
+  margin: 5px 25px 20px;
 }
 
 #four-card-section {
@@ -60,10 +62,14 @@ h2 {
 
 #four-card-section div {
   background-color: white;
-  width: 330px;
-  height: 250px;
+  width: 310px;
+  height: 200px;
   margin: 10px;
   border-radius: 3px;
+}
+
+#four-card-section img {
+  transform: translateX(220px);
 }
 
 .supervisor-card {
