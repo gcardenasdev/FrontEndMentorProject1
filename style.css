@@ -1,5 +1,6 @@
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -12,25 +13,27 @@ body {
 
 }
 
-
-header {
-  width: 375px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 #four-card-section {
   width: 25em;
   margin: 0 auto;
 }
 
+header {
+  text-align: center;
+  margin: 0 auto;
+  width: 375px;
+}
+
+
 #header-one {
   font-weight: 200;
+  font-size: 25px;
   color: hsl(234, 12%, 34%);
 }
 
 #header-two{
   font-weight: 600;
+  font-size: 25px;
   color: hsl(234, 12%, 34%);
 }
 
@@ -40,4 +43,5 @@ h2 {
 
 p {
   color: hsl(229, 6%, 66%);
+  font-size: 13px;
 }
