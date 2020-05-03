@@ -91,3 +91,36 @@ header p {
 .calculator-card {
   border-top: 3px solid hsl(212, 86%, 64%);
 }
+
+
+@media only screen and (min-width: 1220px) {
+
+  header {
+    width: 500px;
+  }
+
+  #four-card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    column-gap: 20px;
+    grid-template-rows: auto auto auto auto;
+    margin: 0 auto;
+  }
+
+  .supervisor-card {
+    grid-area: 2 / 1 / 4 / 3;
+  }
+
+  .team-card {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .karma-card {
+    grid-area: 3 / 2 / 5 / 3;
+  }
+
+  .calculator-card {
+    grid-area: 2 / 3 / 4 / 4;
+  }
+
+}
