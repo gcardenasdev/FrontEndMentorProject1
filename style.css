@@ -1,5 +1,6 @@
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -14,30 +15,112 @@ body {
 
 
 header {
-  width: 375px;
-  margin: 0 auto;
   text-align: center;
+  margin: 70px auto;
+  width: 320px;
+  height: 150px;
 }
 
-#four-card-section {
-  width: 25em;
-  margin: 0 auto;
+
+header p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
 }
+
 
 #header-one {
   font-weight: 200;
+  font-size: 25px;
   color: hsl(234, 12%, 34%);
 }
 
 #header-two{
   font-weight: 600;
+  font-size: 25px;
   color: hsl(234, 12%, 34%);
+  margin-top: -15px;
 }
 
-h2 {
+#four-card-section h2 {
   color: hsl(234, 12%, 34%);
+  font-size: 20px;
+  margin: 15px 25px 5px;
 }
 
-p {
+#four-card-section p {
   color: hsl(229, 6%, 66%);
+  font-size: 13px;
+  margin: 5px 25px 20px;
+}
+
+#four-card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+#four-card-section div {
+  background-color: white;
+  width: 310px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 0 8px 15px hsl(229, 6%, 66%);
+
+}
+
+#four-card-section img {
+  transform: translateX(220px);
+}
+
+.supervisor-card {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.team-card {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+
+@media only screen and (min-width: 1220px) {
+
+  header {
+    width: 500px;
+  }
+
+  #four-card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    column-gap: 20px;
+    grid-template-rows: auto auto auto auto;
+    margin: 0 auto;
+  }
+
+  .supervisor-card {
+    grid-area: 2 / 1 / 4 / 3;
+  }
+
+  .team-card {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .karma-card {
+    grid-area: 3 / 2 / 5 / 3;
+  }
+
+  .calculator-card {
+    grid-area: 2 / 3 / 4 / 4;
+  }
+
 }
