@@ -30,24 +30,20 @@ header {
   height: 150px;
 }
 
-
-header p {
-  color: var(--Grayish-Blue);
-  font-size: 15px;
-}
-
-
 #header-one {
   font-weight: 200;
   font-size: 25px;
   color: var(--Very-Dark-Blue);
 }
 
-#header-two{
+span{
   font-weight: 600;
-  font-size: 25px;
-  color: var(--Very-Dark-Blue);
   margin-top: -15px;
+}
+
+header p {
+  color: var(--Grayish-Blue);
+  font-size: 15px;
 }
 
 #four-card-section h2 {
@@ -63,13 +59,9 @@ header p {
 }
 
 #four-card-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  display: grid;
+  margin: 0 auto;
 }
-
 
 #four-card-section div {
   background-color: white;
@@ -87,18 +79,22 @@ header p {
 
 .supervisor-card {
   border-top: 3px solid var(--Cyan);
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 .team-card {
   border-top: 3px solid var(--Red);
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 .karma-card {
   border-top: 3px solid var(--Orange);
+  grid-area: 3 / 2 / 4 / 3;
 }
 
 .calculator-card {
   border-top: 3px solid var(--Blue);
+  grid-area: 4 / 2 / 5 / 3;
 }
 
 
@@ -109,11 +105,10 @@ header p {
   }
 
   #four-card-section {
-    display: grid;
     grid-template-columns: repeat(3, 310px);
     column-gap: 20px;
     grid-template-rows: auto auto auto auto;
-    margin: 0 auto;
+    margin: 0 135px;
   }
 
   .supervisor-card {
